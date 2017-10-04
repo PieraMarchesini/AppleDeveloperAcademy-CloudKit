@@ -236,7 +236,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="jGP-JW-Dyw"/>
+                        <viewLayoutGuide key="safeArea" id="091-lM-huh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Beverage Detail" id="dsr-Lu-s8z">
                         <barButtonItem key="rightBarButtonItem" title="Share" id="Hpe-hO-diK"/>

@@ -12,8 +12,8 @@ import UIKit
 
 typealias DC = DrinkCategoria
 
-enum DrinkCategoria: String {
-    case caipirinha
+enum DrinkCategoria: Int, CustomStringConvertible {
+    case caipirinha = 0
     case beer
     case gin
     case wine
@@ -22,6 +22,29 @@ enum DrinkCategoria: String {
     case tequila
     case cachaça
     case others
+    
+    var description: String {
+        switch self {
+        case .caipirinha:
+            return "Caipirinha"
+        case .beer:
+            return "Beer"
+        case .gin:
+            return "Gin"
+        case .drink:
+            return "Drink"
+        case .cachaça:
+            return "Caçhaca"
+        case .others:
+            return "Others"
+        case .shot:
+            return "Shot"
+        case .tequila:
+            return "Tequila"
+        case .wine:
+            return "Wine"
+        }
+    }
  
 }
 

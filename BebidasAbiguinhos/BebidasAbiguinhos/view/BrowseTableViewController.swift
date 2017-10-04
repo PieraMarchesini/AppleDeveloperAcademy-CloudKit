@@ -10,11 +10,16 @@ import UIKit
 
 class BrowseTableViewController: UITableViewController {
 
-    let drinks = [Drink]()
+    var drinks = [Drink]()
+    var quantity = [Int]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        for _ in  DC.all {
+            self.quantity.append(0)
+        }
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,6 +27,29 @@ class BrowseTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let manager = CKDrinkManager.shared
+        manager.fetchAllDrinks(type: .publicDB) { (drinks, error) in
+            if error == nil {
+                guard let drinks = drinks else { return }
+                self.drinks = drinks
+                
+                for d in drinks {
+                    self.quantity[d.categoria.rawValue] += 1
+                }
+                self.performSelector(onMainThread: #selector(self.reload), with: nil, waitUntilDone: true)
+                
+            }
+        }
+        
+    }
+    
+    @objc func reload() {
+        tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -31,6 +59,7 @@ class BrowseTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        
         return 1
     }
 
@@ -42,13 +71,15 @@ class BrowseTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? BrowseTableViewCell
 
         let dc = DC.all[indexPath.row]
 
-        cell.textLabel?.text = "\(dc.rawValue)"
+        cell?.category.text = dc.description
         
-        return cell
+        cell?.quantityOfBeverages.text = "Quantity: \(quantity[dc.rawValue])"
+        
+        return cell!
     }
  
 

@@ -67,7 +67,8 @@ class CKDrinkManager {
             
             let drinks = drinkRecords.map({ (record) -> Drink in
                 let nome = record.value(forKey: DrinkKey.nome.rawValue) as? String ?? ""
-                let cat = DC(rawValue: record.value(forKey: DrinkKey.categoria.rawValue) as? String ?? "") ?? DC.beer
+                
+                let cat = DC(rawValue: record.value(forKey: DrinkKey.categoria.rawValue) as? Int ?? 0) ?? DC.beer
                 let foto = record.value(forKey: DrinkKey.foto.rawValue) as? CKAsset ?? Drink.defaultCKAsset()!
                 
                 return Drink(nome: nome, categoria: cat, foto: foto)
