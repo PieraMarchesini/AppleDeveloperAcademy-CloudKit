@@ -1,5 +1,5 @@
 //
-//  BrowseTableViewCell.swift
+//  ProfileTableViewCell.swift
 //  BebidasAbiguinhos
 //
 //  Created by Piera Marchesini on 04/10/17.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class BrowseTableViewCell: UITableViewCell {
+class ProfileTableViewCell: UITableViewCell {
 
-    @IBOutlet var category: UILabel!
-    @IBOutlet var quantityOfBeverages: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
