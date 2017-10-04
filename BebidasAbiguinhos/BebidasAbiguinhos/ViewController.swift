@@ -7,12 +7,22 @@
 //
 
 import UIKit
+import CloudKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+//        let drink = Drink(nome: "Giovanni2", categoria: .beer, foto: UIImage(named: "tequila")!)!
+        let manager: CKDrinkManager = CKDrinkManager.shared
+//        manager.save(drink: drink, type: .privateDB)
+        manager.fetchAllDrinks(type: .publicDB, callback: { (drinks, error) in
+            drinks?.forEach({ (drink) in
+                print(drink.string())
+            })
+        })
+        
     }
 
     override func didReceiveMemoryWarning() {
