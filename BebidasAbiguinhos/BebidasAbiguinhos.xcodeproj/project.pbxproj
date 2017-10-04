@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65012C161F857E3400CCF17D /* BrowseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C151F857E3400CCF17D /* BrowseTableViewCell.swift */; };
+		65012C181F857E4B00CCF17D /* BrowseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C171F857E4B00CCF17D /* BrowseTableViewController.swift */; };
 		6551EF861F8545C800E4C76E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF851F8545C800E4C76E /* AppDelegate.swift */; };
 		6551EF881F8545C800E4C76E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF871F8545C800E4C76E /* ViewController.swift */; };
-		6551EF8B1F8545C800E4C76E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6551EF891F8545C800E4C76E /* Main.storyboard */; };
 		6551EF8E1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF8C1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld */; };
 		6551EF901F8545C800E4C76E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6551EF8F1F8545C800E4C76E /* Assets.xcassets */; };
 		6551EF931F8545C800E4C76E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6551EF911F8545C800E4C76E /* LaunchScreen.storyboard */; };
@@ -39,10 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65012C121F857DE800CCF17D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		65012C151F857E3400CCF17D /* BrowseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTableViewCell.swift; sourceTree = "<group>"; };
+		65012C171F857E4B00CCF17D /* BrowseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTableViewController.swift; sourceTree = "<group>"; };
 		6551EF821F8545C800E4C76E /* BebidasAbiguinhos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BebidasAbiguinhos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6551EF851F8545C800E4C76E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6551EF871F8545C800E4C76E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6551EF8A1F8545C800E4C76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6551EF8D1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BebidasAbiguinhos.xcdatamodel; sourceTree = "<group>"; };
 		6551EF8F1F8545C800E4C76E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6551EF921F8545C800E4C76E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -86,6 +89,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65012C141F857E1D00CCF17D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				65012C151F857E3400CCF17D /* BrowseTableViewCell.swift */,
+				65012C171F857E4B00CCF17D /* BrowseTableViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		6551EF791F8545C800E4C76E = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +124,11 @@
 			children = (
 				B91281C21F856C0D00899CEE /* entidade */,
 				B91281BF1F856BC800899CEE /* persistencia */,
+				65012C141F857E1D00CCF17D /* view */,
 				B91281BB1F854AB400899CEE /* BebidasAbiguinhos.entitlements */,
 				6551EF851F8545C800E4C76E /* AppDelegate.swift */,
 				6551EF871F8545C800E4C76E /* ViewController.swift */,
-				6551EF891F8545C800E4C76E /* Main.storyboard */,
+				65012C121F857DE800CCF17D /* Main.storyboard */,
 				6551EF8F1F8545C800E4C76E /* Assets.xcassets */,
 				6551EF911F8545C800E4C76E /* LaunchScreen.storyboard */,
 				6551EF941F8545C800E4C76E /* Info.plist */,
@@ -284,7 +297,6 @@
 			files = (
 				6551EF931F8545C800E4C76E /* LaunchScreen.storyboard in Resources */,
 				6551EF901F8545C800E4C76E /* Assets.xcassets in Resources */,
-				6551EF8B1F8545C800E4C76E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,7 +324,9 @@
 				6551EF881F8545C800E4C76E /* ViewController.swift in Sources */,
 				6551EF861F8545C800E4C76E /* AppDelegate.swift in Sources */,
 				B9702B5E1F857760002E1383 /* CKDrinkManager.swift in Sources */,
+				65012C181F857E4B00CCF17D /* BrowseTableViewController.swift in Sources */,
 				B91281C41F856C1700899CEE /* Drink.swift in Sources */,
+				65012C161F857E3400CCF17D /* BrowseTableViewCell.swift in Sources */,
 				B91281C61F856F3C00899CEE /* CKRecord+Extensions.swift in Sources */,
 				6551EF8E1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld in Sources */,
 			);
@@ -350,14 +364,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6551EF891F8545C800E4C76E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6551EF8A1F8545C800E4C76E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6551EF911F8545C800E4C76E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -482,7 +488,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BebidasAbiguinhos/BebidasAbiguinhos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A3J488KW82;
+				DEVELOPMENT_TEAM = 8Q8A65W24Q;
 				INFOPLIST_FILE = BebidasAbiguinhos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.BebidasAbiguinhos;
@@ -498,7 +504,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BebidasAbiguinhos/BebidasAbiguinhos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A3J488KW82;
+				DEVELOPMENT_TEAM = 8Q8A65W24Q;
 				INFOPLIST_FILE = BebidasAbiguinhos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.BebidasAbiguinhos;
