@@ -35,7 +35,10 @@ class BrowseTableViewController: UITableViewController {
             if error == nil {
                 guard let drinks = drinks else { return }
                 self.drinks = drinks
-                
+                self.quantity = [Int]()
+                for _ in  DC.all {
+                    self.quantity.append(0)
+                }
                 for d in drinks {
                     self.quantity[d.categoria.rawValue] += 1
                 }
