@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -224,6 +225,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="jGP-JW-Dyw"/>
                     </view>
                     <navigationItem key="navigationItem" title="Beverage Detail" id="dsr-Lu-s8z">
                         <barButtonItem key="rightBarButtonItem" title="Share" id="Hpe-hO-diK"/>

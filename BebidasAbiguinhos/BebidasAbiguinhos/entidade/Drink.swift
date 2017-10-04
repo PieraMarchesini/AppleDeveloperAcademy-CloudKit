@@ -22,8 +22,23 @@ enum DrinkCategoria: String {
     case tequila
     case cachaça
     case others
-    
-    
+ 
+}
+
+extension DrinkCategoria {
+    static var all: [DrinkCategoria] {
+        var a = [DrinkCategoria]()
+        a.append(.beer)
+        a.append(.cachaça)
+        a.append(.caipirinha)
+        a.append(.drink)
+        a.append(.gin)
+        a.append(.others)
+        a.append(.shot)
+        a.append(.tequila)
+        a.append(.wine)
+        return a
+    }
 }
 
 enum DrinkKey: String {
