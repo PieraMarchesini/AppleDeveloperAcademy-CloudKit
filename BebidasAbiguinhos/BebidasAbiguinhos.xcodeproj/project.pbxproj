@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		65012C161F857E3400CCF17D /* BrowseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C151F857E3400CCF17D /* BrowseTableViewCell.swift */; };
 		65012C181F857E4B00CCF17D /* BrowseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C171F857E4B00CCF17D /* BrowseTableViewController.swift */; };
+		65012C1A1F8582A900CCF17D /* BeveragesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C191F8582A900CCF17D /* BeveragesTableViewController.swift */; };
+		65012C1C1F8582C300CCF17D /* BeveragesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C1B1F8582C300CCF17D /* BeveragesTableViewCell.swift */; };
+		65012C1E1F85834400CCF17D /* BeverageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C1D1F85834400CCF17D /* BeverageDetailViewController.swift */; };
+		65012C201F8583C800CCF17D /* SharedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C1F1F8583C800CCF17D /* SharedTableViewController.swift */; };
+		65012C221F8583E000CCF17D /* SharedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C211F8583E000CCF17D /* SharedTableViewCell.swift */; };
+		65012C241F85844A00CCF17D /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C231F85844A00CCF17D /* ProfileTableViewController.swift */; };
+		65012C261F85846000CCF17D /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C251F85846000CCF17D /* ProfileTableViewCell.swift */; };
+		65012C281F85847800CCF17D /* AddBeverageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C271F85847800CCF17D /* AddBeverageTableViewController.swift */; };
 		6551EF861F8545C800E4C76E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF851F8545C800E4C76E /* AppDelegate.swift */; };
 		6551EF881F8545C800E4C76E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF871F8545C800E4C76E /* ViewController.swift */; };
 		6551EF8E1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF8C1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld */; };
@@ -43,6 +51,14 @@
 		65012C121F857DE800CCF17D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		65012C151F857E3400CCF17D /* BrowseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTableViewCell.swift; sourceTree = "<group>"; };
 		65012C171F857E4B00CCF17D /* BrowseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseTableViewController.swift; sourceTree = "<group>"; };
+		65012C191F8582A900CCF17D /* BeveragesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesTableViewController.swift; sourceTree = "<group>"; };
+		65012C1B1F8582C300CCF17D /* BeveragesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeveragesTableViewCell.swift; sourceTree = "<group>"; };
+		65012C1D1F85834400CCF17D /* BeverageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeverageDetailViewController.swift; sourceTree = "<group>"; };
+		65012C1F1F8583C800CCF17D /* SharedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTableViewController.swift; sourceTree = "<group>"; };
+		65012C211F8583E000CCF17D /* SharedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTableViewCell.swift; sourceTree = "<group>"; };
+		65012C231F85844A00CCF17D /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
+		65012C251F85846000CCF17D /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		65012C271F85847800CCF17D /* AddBeverageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeverageTableViewController.swift; sourceTree = "<group>"; };
 		6551EF821F8545C800E4C76E /* BebidasAbiguinhos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BebidasAbiguinhos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6551EF851F8545C800E4C76E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6551EF871F8545C800E4C76E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +110,14 @@
 			children = (
 				65012C151F857E3400CCF17D /* BrowseTableViewCell.swift */,
 				65012C171F857E4B00CCF17D /* BrowseTableViewController.swift */,
+				65012C191F8582A900CCF17D /* BeveragesTableViewController.swift */,
+				65012C1B1F8582C300CCF17D /* BeveragesTableViewCell.swift */,
+				65012C1D1F85834400CCF17D /* BeverageDetailViewController.swift */,
+				65012C1F1F8583C800CCF17D /* SharedTableViewController.swift */,
+				65012C211F8583E000CCF17D /* SharedTableViewCell.swift */,
+				65012C231F85844A00CCF17D /* ProfileTableViewController.swift */,
+				65012C251F85846000CCF17D /* ProfileTableViewCell.swift */,
+				65012C271F85847800CCF17D /* AddBeverageTableViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -321,13 +345,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65012C281F85847800CCF17D /* AddBeverageTableViewController.swift in Sources */,
+				65012C241F85844A00CCF17D /* ProfileTableViewController.swift in Sources */,
 				6551EF881F8545C800E4C76E /* ViewController.swift in Sources */,
 				6551EF861F8545C800E4C76E /* AppDelegate.swift in Sources */,
+				65012C261F85846000CCF17D /* ProfileTableViewCell.swift in Sources */,
 				B9702B5E1F857760002E1383 /* CKDrinkManager.swift in Sources */,
+				65012C1A1F8582A900CCF17D /* BeveragesTableViewController.swift in Sources */,
+				65012C201F8583C800CCF17D /* SharedTableViewController.swift in Sources */,
+				65012C1E1F85834400CCF17D /* BeverageDetailViewController.swift in Sources */,
 				65012C181F857E4B00CCF17D /* BrowseTableViewController.swift in Sources */,
+				65012C221F8583E000CCF17D /* SharedTableViewCell.swift in Sources */,
 				B91281C41F856C1700899CEE /* Drink.swift in Sources */,
 				65012C161F857E3400CCF17D /* BrowseTableViewCell.swift in Sources */,
 				B91281C61F856F3C00899CEE /* CKRecord+Extensions.swift in Sources */,
+				65012C1C1F8582C300CCF17D /* BeveragesTableViewCell.swift in Sources */,
 				6551EF8E1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,7 +520,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BebidasAbiguinhos/BebidasAbiguinhos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Q8A65W24Q;
+				DEVELOPMENT_TEAM = A3J488KW82;
 				INFOPLIST_FILE = BebidasAbiguinhos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.BebidasAbiguinhos;
@@ -504,7 +536,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = BebidasAbiguinhos/BebidasAbiguinhos.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8Q8A65W24Q;
+				DEVELOPMENT_TEAM = A3J488KW82;
 				INFOPLIST_FILE = BebidasAbiguinhos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MackMobile.BebidasAbiguinhos;
