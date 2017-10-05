@@ -173,6 +173,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="drinkImageView" destination="Mhs-HT-H0m" id="HrW-cL-CG1"/>
+                                    <outlet property="nameLabel" destination="w3o-jw-gZD" id="XGr-zc-VVn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -453,6 +457,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="O0M-C5-7fD"/>
+        <segue reference="mh0-cQ-Ba9"/>
     </inferredMetricsTieBreakers>
 </document>

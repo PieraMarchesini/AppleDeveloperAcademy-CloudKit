@@ -10,8 +10,11 @@ import UIKit
 
 class BrowseTableViewController: UITableViewController {
 
+    let toBeveragesSegueIdentifier = "toBeverages"
+    
     var drinks = [Drink]()
     var quantity = [Int]()
+    var touchDC: DC?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +88,21 @@ class BrowseTableViewController: UITableViewController {
         return cell!
     }
  
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dc = DC(rawValue: indexPath.item)
+        touchDC = dc
+        performSegue(withIdentifier: toBeveragesSegueIdentifier, sender: nil)
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == toBeveragesSegueIdentifier {
+            if let vc = segue.destination as? BeveragesTableViewController {
+                vc.drinks = self.drinks
+                vc.dc = self.touchDC
+            }
+        }
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

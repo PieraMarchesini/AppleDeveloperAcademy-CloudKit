@@ -51,15 +51,15 @@ enum DrinkCategoria: Int, CustomStringConvertible {
 extension DrinkCategoria {
     static var all: [DrinkCategoria] {
         var a = [DrinkCategoria]()
-        a.append(.beer)
-        a.append(.cachaça)
         a.append(.caipirinha)
-        a.append(.drink)
+        a.append(.beer)
         a.append(.gin)
-        a.append(.others)
+        a.append(.wine)
+        a.append(.drink)
         a.append(.shot)
         a.append(.tequila)
-        a.append(.wine)
+        a.append(.cachaça)
+        a.append(.others)
         return a
     }
 }
@@ -121,6 +121,10 @@ class Drink {
             print("Error writing data", error)
             return nil
         }
+    }
+    
+    static func defaultImage () -> UIImage{
+        return UIImage(named: "tequila")!
     }
     
     func string() -> String{
