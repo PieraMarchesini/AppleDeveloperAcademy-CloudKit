@@ -9,6 +9,8 @@
 import UIKit
 
 class ProfileTableViewController: UITableViewController {
+    
+    var beverages = [Drink]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,33 +21,88 @@ class ProfileTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Pegar as informações do perfil e das bebidas
     }
+    
+
+    @IBAction func addBeverage(_ sender: Any) {
+        performSegue(withIdentifier: "toAddBeverage", sender: self)
+    }
+    
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        switch section {
+        case 0:
+            return 1
+        case 1:
+            return beverages.count
+        default:
+            print("error")
+            return 0
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        switch section {
+        case 1:
+            return "MY BEVERAGES"
+        default:
+            return ""
+        }
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        if indexPath.section == 0 {
+            guard let cellProfile = tableView.dequeueReusableCell(withIdentifier: "cellProfile", for: indexPath) as? ProfileTableViewCell else {
+                return UITableViewCell()
+            }
+            
+//            //Guardar a instancia do UITextField
+//            self.outletProjectTitle = cellProject.projectName
+//
+//            //
+//            if let project = self.editedProject {
+//                cellProject.projectName.text = project.name
+//
+//            } else {
+//                cellProject.projectName.text = ""
+//            }
+            return cellProfile
+            
+            //
+        } else {
+            guard let cellBeverage = tableView.dequeueReusableCell(withIdentifier: "cellBeverage", for: indexPath) as? ProfileBeveragesTableViewCell else {
+                return UITableViewCell()
+            }
+            
+//            guard let arrayList = editedProject?.task?.array else {
+//                print("No tasks")
+//                return UITableViewCell()
+//            }
+//
+//            var taskList = [Task]()
+//
+//            for task in arrayList {
+//                if let taskCasted = task as? Task {
+//                    taskList.append(taskCasted)
+//                }
+//            }
+            
+//            cellTask.taskTitle.text = taskList[indexPath.row].title
+            return cellBeverage
+        }
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

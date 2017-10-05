@@ -17,6 +17,7 @@
 		65012C241F85844A00CCF17D /* ProfileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C231F85844A00CCF17D /* ProfileTableViewController.swift */; };
 		65012C261F85846000CCF17D /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C251F85846000CCF17D /* ProfileTableViewCell.swift */; };
 		65012C281F85847800CCF17D /* AddBeverageTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65012C271F85847800CCF17D /* AddBeverageTableViewController.swift */; };
+		65509C811F866BEA00DC583B /* ProfileBeveragesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65509C801F866BEA00DC583B /* ProfileBeveragesTableViewCell.swift */; };
 		6551EF861F8545C800E4C76E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF851F8545C800E4C76E /* AppDelegate.swift */; };
 		6551EF881F8545C800E4C76E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF871F8545C800E4C76E /* ViewController.swift */; };
 		6551EF8E1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6551EF8C1F8545C800E4C76E /* BebidasAbiguinhos.xcdatamodeld */; };
@@ -60,6 +61,7 @@
 		65012C231F85844A00CCF17D /* ProfileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
 		65012C251F85846000CCF17D /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		65012C271F85847800CCF17D /* AddBeverageTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBeverageTableViewController.swift; sourceTree = "<group>"; };
+		65509C801F866BEA00DC583B /* ProfileBeveragesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBeveragesTableViewCell.swift; sourceTree = "<group>"; };
 		6551EF821F8545C800E4C76E /* BebidasAbiguinhos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BebidasAbiguinhos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6551EF851F8545C800E4C76E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6551EF871F8545C800E4C76E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				65012C211F8583E000CCF17D /* SharedTableViewCell.swift */,
 				65012C231F85844A00CCF17D /* ProfileTableViewController.swift */,
 				65012C251F85846000CCF17D /* ProfileTableViewCell.swift */,
+				65509C801F866BEA00DC583B /* ProfileBeveragesTableViewCell.swift */,
 				65012C271F85847800CCF17D /* AddBeverageTableViewController.swift */,
 			);
 			path = view;
@@ -347,6 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65509C811F866BEA00DC583B /* ProfileBeveragesTableViewCell.swift in Sources */,
 				65012C281F85847800CCF17D /* AddBeverageTableViewController.swift in Sources */,
 				65012C241F85844A00CCF17D /* ProfileTableViewController.swift in Sources */,
 				6551EF881F8545C800E4C76E /* ViewController.swift in Sources */,
