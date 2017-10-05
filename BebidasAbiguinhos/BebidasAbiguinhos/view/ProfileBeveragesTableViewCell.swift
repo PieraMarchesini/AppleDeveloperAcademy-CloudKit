@@ -1,16 +1,19 @@
 //
-//  ProfileTableViewCell.swift
+//  ProfileBeveragesTableViewCell.swift
 //  BebidasAbiguinhos
 //
-//  Created by Piera Marchesini on 04/10/17.
+//  Created by Piera Marchesini on 05/10/17.
 //  Copyright © 2017 Piera Marchesini. All rights reserved.
 //
 
 import UIKit
 
-class ProfileTableViewCell: UITableViewCell {
+class ProfileBeveragesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var imageBeverage: UIImageView!
+    @IBOutlet weak var beverageName: UILabel!
+    @IBOutlet weak var beverageCategory: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
