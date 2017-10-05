@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n1J-ow-Ypt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n1J-ow-Ypt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="35" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NwJ-0p-hEN" id="0Qn-oh-Qbj">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ygg-Qg-V65">
@@ -47,7 +47,7 @@
                                         <rect key="frame" x="0.0" y="291" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1uB-k2-KTe" id="ML7-cl-BUp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-PO-lDu">
@@ -68,7 +68,7 @@
                                         <rect key="frame" x="0.0" y="391" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wL6-0M-6VW" id="qoO-Zg-Wfd">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NVc-yg-fgL">
@@ -186,7 +186,7 @@
                     </tableView>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <segue destination="c8E-wc-HNC" kind="show" id="mh0-cQ-Ba9"/>
+                        <segue destination="c8E-wc-HNC" kind="show" identifier="showDetail" id="mh0-cQ-Ba9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Am-aT-6YT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -243,9 +243,18 @@
                         <viewLayoutGuide key="safeArea" id="091-lM-huh"/>
                     </view>
                     <navigationItem key="navigationItem" title="Beverage Detail" id="dsr-Lu-s8z">
-                        <barButtonItem key="rightBarButtonItem" title="Share" id="Hpe-hO-diK"/>
+                        <barButtonItem key="rightBarButtonItem" title="Share" id="Hpe-hO-diK">
+                            <connections>
+                                <action selector="shareBeverage:" destination="c8E-wc-HNC" id="hPG-Zc-heb"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="beverageCategoryLabel" destination="BGV-9O-Akn" id="m7y-i6-kXx"/>
+                        <outlet property="beverageImage" destination="MfR-1m-yBF" id="2sq-QK-d9V"/>
+                        <outlet property="beverageNameLabel" destination="NiB-z2-3fd" id="QWW-bK-M6i"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTr-Xu-vdo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -470,6 +479,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="O0M-C5-7fD"/>
+        <segue reference="mh0-cQ-Ba9"/>
     </inferredMetricsTieBreakers>
 </document>

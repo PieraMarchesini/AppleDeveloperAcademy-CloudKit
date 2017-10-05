@@ -7,23 +7,50 @@
 //
 
 import UIKit
+import CloudKit
 
 class BeverageDetailViewController: UIViewController {
 
     //MARK: - Outlets
-    @IBOutlet weak var beverageImage: UIImageView!
-    @IBOutlet weak var beverageNameLabel: UILabel!
-    @IBOutlet weak var beverageCategoryLabel: UILabel!
+    @IBOutlet weak var beverageImage: UIImageView?
+    @IBOutlet weak var beverageNameLabel: UILabel?
+    @IBOutlet weak var beverageCategoryLabel: UILabel?
     
+    //MARK: - Atributes
+    var beverage: Drink?
+    
+    //MARK: - ViewController life cicle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        if beverage != nil {
+            if let imageURL = beverage?.foto.fileURL {
+                do {
+                    try beverageImage?.image = UIImage(data: Data(contentsOf: imageURL))
+                }catch{
+                    print("Erro ao carregar fotenha")
+                    beverageImage?.image = Drink.defaultImage()
+                }
+            }
+            if let name = beverage?.nome {
+                beverageNameLabel?.text = name
+            }
+            if let category = beverage?.categoria.description {
+                beverageCategoryLabel?.text = category
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Action
+    @IBAction func shareBeverage(_ sender: Any) {
+        let share = CKShare(rootRecord: CKRecord(recordType: "Drink"))
+        share[CKShareTitleKey] = "Share test" as CKRecordValue
+        share.publicPermission = .readOnly
     }
     
 
