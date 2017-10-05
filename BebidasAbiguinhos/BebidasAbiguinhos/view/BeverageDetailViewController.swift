@@ -10,6 +10,11 @@ import UIKit
 
 class BeverageDetailViewController: UIViewController {
 
+    //MARK: - Outlets
+    @IBOutlet weak var beverageImage: UIImageView!
+    @IBOutlet weak var beverageNameLabel: UILabel!
+    @IBOutlet weak var beverageCategoryLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
